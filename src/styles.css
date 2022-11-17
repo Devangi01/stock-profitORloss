@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Source Code Pro", monospace;
+  background-image: linear-gradient(45deg, #c0b1f7, #ffddd6);
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.input-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  margin-bottom: 2vh;
+}
+.output-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.output {
+  width: 70%;
+  margin: auto;
+  word-wrap: break-word;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.input {
+  width: 50%;
+}
+.input input {
+  font-family: "Source Code Pro", monospace;
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: 800;
+  margin-bottom: 2vh;
+  color: black;
+  border: 3px solid black;
+}
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+.btn-container button {
+  width: 40%;
+  font-size: 1.5rem;
+  color: black;
+  border: 3px solid black;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: #aafb00;
+  padding: 0.5rem 0;
+}
+@keyframes sprinkle {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+.animated-element {
+  margin: 0 0.5rem;
+  animation: sprinkle;
+  animation-duration: 2s infinite;
+}
+@media screen and (max-width: 678px) {
+  .input {
+    width: 80%;
+  }
+  .output {
+    margin: auto;
+    margin-top: 4vh;
+    width: 80%;
+  }
+  .input input {
+    padding: 0.2rem;
+  }
+  .btn-container button {
+    width: 40%;
+    padding: 0.1rem 0;
+  }
+  .App {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-container {
+    width: 100%;
+  }
+  .output-container {
+    width: 100%;
+  }
+}
