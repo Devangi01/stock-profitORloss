@@ -39,7 +39,7 @@ export default function App() {
   return (
     <div className="App">
       <form className="input-container" onSubmit={onSubmitHandler}>
-        <h3>Where's my Stonks?</h3>
+        <h3>What is satus about my Stocks?</h3>
         <div className="input">
           <input
             autoComplete="off"
