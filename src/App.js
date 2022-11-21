@@ -19,7 +19,7 @@ export default function App() {
       var lossPercentage = ((loss * 100) / init).toFixed(2);
       setColor("red");
       setMessage(
-        `Whoops!! Your loss is ${loss} and loss Percentage is ${lossPercentage}%`
+        `oops!! Your loss is ${loss} and loss Percentage is ${lossPercentage}%`
       );
     } else if (current > init) {
       var profit = ((current - init) * quatity).toFixed(2);
@@ -33,13 +33,13 @@ export default function App() {
       );
     } else {
       setColor("blue");
-      setMessage(`No Pain, No Gain and No Gain, No Pain`);
+      setMessage(`No Gain, No Pain`);
     }
   }
   return (
     <div className="App">
       <form className="input-container" onSubmit={onSubmitHandler}>
-        <h3>Where's my Stonks?</h3>
+        <h3>Where is my Stocks?</h3>
         <div className="input">
           <input
             autoComplete="off"
