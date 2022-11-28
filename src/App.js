@@ -16,7 +16,7 @@ export default function App() {
       setMessage(`do not have any stock`);
     } else if (init > current) {
       var loss = ((init - current) * quatity).toFixed(2);
-      var lossPercentage = ((loss * 100) / init).toFixed(2);
+      var lossPercentage = ((loss / (init * quatity)) * 100).toFixed(2);
       setColor("red");
       setMessage(
         `oops!! Your loss is ${loss} and loss Percentage is ${lossPercentage}%`
@@ -24,7 +24,7 @@ export default function App() {
     } else if (current > init) {
       var profit = ((current - init) * quatity).toFixed(2);
 
-      var profitPercentage = ((profit * 100) / init).toFixed(2);
+      var profitPercentage = ((profit / (init * quatity)) * 100).toFixed(2);
 
       setColor("green");
 
@@ -44,7 +44,8 @@ export default function App() {
           <input
             autoComplete="off"
             id="init"
-            type="text"
+            min="0"
+            type="number"
             placeholder="Enter inital price here"
             required
           />
@@ -52,13 +53,15 @@ export default function App() {
             autoComplete="off"
             id="quatity"
             type="number"
+            min="0"
             placeholder="Enter Number of Stocks here"
             required
           />
           <input
             autoComplete="off"
             id="current"
-            type="text"
+            min="0"
+            type="number"
             placeholder="Enter Current Price Here"
             required
           />
