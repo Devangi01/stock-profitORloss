@@ -45,6 +45,7 @@ export default function App() {
             autoComplete="off"
             id="init"
             min="0"
+            oninput="validity.valid||(value='');"
             type="number"
             placeholder="Enter inital price here"
             required
@@ -54,6 +55,7 @@ export default function App() {
             id="quatity"
             type="number"
             min="0"
+            oninput="validity.valid||(value='');"
             placeholder="Enter Number of Stocks here"
             required
           />
@@ -61,6 +63,7 @@ export default function App() {
             autoComplete="off"
             id="current"
             min="0"
+            oninput="validity.valid||(value='');"
             type="number"
             placeholder="Enter Current Price Here"
             required
