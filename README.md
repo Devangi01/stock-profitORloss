@@ -12,5 +12,11 @@ tell it in percentage
 
 tell it in absolute too
 
+# Tech Stack Used
+React JS
 
-# [Live](https://wo14dz.csb.app/)
+CSS
+
+JSX
+
+# [Live](https://profitorlossing.netlify.app/)
